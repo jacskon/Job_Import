@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+        <Jobsdata>
+        <createdBy>SYSMAN</createdBy>
+        <creationDate>2015-06-11T15:17:40.732+10:00</creationDate>
+        <coreReleaseVersion>12.1.0.4.0</coreReleaseVersion>
+        <productReleaseVersion>12.1.0.4.0</productReleaseVersion>
+        <productVersion>12c</productVersion>
+        <releaseNumber>4</releaseNumber>
+        <jobList>
+                <jobData>
+                    <job>
+                        <credentialUsages>
+                            <credentialReference>
+                                <name>jobCredentials1</name>
+                                <owner>OPS_ADMIN</owner>
+                                <type>NAMED</type>
+                            </credentialReference>
+                            <description>Credentials to authenticate on the host to execute the command or script.</description>
+                                <name>&lt;all_targets&gt;</name>
+                                <type>host</type>
+                            <usage>defaultHostCred</usage>
+                        </credentialUsages>
+                        <description>jobDescription1</description>
+                        <correctiveAction>false</correctiveAction>
+                        <libraryJob>true</libraryJob>
+                        <name>jobName1</name>
+                        <owner>OPS_ADMIN</owner>
+                        <schedule>
+                            <frequency>IMMEDIATE</frequency>
+                            <gracePeriod>-1</gracePeriod>
+                            <interval>0</interval>
+                            <timeZone>
+                                <targetIndex>1</targetIndex>
+                                <type>TIMEZONE_TARGET</type>
+                            </timeZone>
+                        </schedule>
+                        <status>ACTIVE</status>
+                        <targetType>host</targetType>
+                        <targets>
+                            <name>jobParams1</name>
+                            <type>jobTargetType1</type>
+                        </targets>
+                        <type>OSCommand</type>
+                        <variables>
+                            <description>Comma separated list of parameters to the command.
+        For example, if the command is &quot;ls&quot; the args might be &quot;-l,file1,file2&quot;.
+        [Deprecated] Use no_shell_command instead.</description>
+                            <name>args</name>
+                            <required>false</required>
+                            <secret>false</secret>
+                            <type>Scalar</type>
+                            <value>/bin/sh -x</value>
+                        </variables>
+                        <variables>
+                            <description>The command to run on the target (without a shell).
+        Useful when parsing the command line is not supported,
+        especially when privilege delegation is enabled.
+        [Deprecated] Use no_shell_command instead.</description>
+                            <name>command</name>
+                            <required>false</required>
+                            <secret>false</secret>
+                            <type>Scalar</type>
+                            <value>%job_default_shell%</value>
+                        </variables>
+                        <variables>
+                            <description>OS Script to run on the target.</description>
+                            <name>large_os_script</name>
+                            <required>false</required>
+                            <secret>false</secret>
+                            <type>Scalar</type>
+                            <value> jobParams1
+                            </value>
+                        </variables>
+                    </job>
+                </jobData>
+                <jobData>
+                    <job>
+                        <credentialUsages>
+                            <credentialReference>
+                                <name>jobCredentials2</name>
+                                <owner>OPS_ADMIN</owner>
+                                <type>NAMED</type>
+                            </credentialReference>
+                            <description>Credentials to authenticate on the host to execute the command or script.</description>
+                                <name>&lt;all_targets&gt;</name>
+                                <type>host</type>
+                            <usage>defaultHostCred</usage>
+                        </credentialUsages>
+                        <description>jobDescription2</description>
+                        <correctiveAction>false</correctiveAction>
+                        <libraryJob>true</libraryJob>
+                        <name>jobName2</name>
+                        <owner>OPS_ADMIN</owner>
+                        <schedule>
+                            <frequency>IMMEDIATE</frequency>
+                            <gracePeriod>-1</gracePeriod>
+                            <interval>0</interval>
+                            <timeZone>
+                                <targetIndex>1</targetIndex>
+                                <type>TIMEZONE_TARGET</type>
+                            </timeZone>
+                        </schedule>
+                        <status>ACTIVE</status>
+                        <targetType>host</targetType>
+                        <targets>
+                            <name>jobParams2</name>
+                            <type>jobTargetType2</type>
+                        </targets>
+                        <type>OSCommand</type>
+                        <variables>
+                            <description>Comma separated list of parameters to the command.
+        For example, if the command is &quot;ls&quot; the args might be &quot;-l,file1,file2&quot;.
+        [Deprecated] Use no_shell_command instead.</description>
+                            <name>args</name>
+                            <required>false</required>
+                            <secret>false</secret>
+                            <type>Scalar</type>
+                            <value>/bin/sh -x</value>
+                        </variables>
+                        <variables>
+                            <description>The command to run on the target (without a shell).
+        Useful when parsing the command line is not supported,
+        especially when privilege delegation is enabled.
+        [Deprecated] Use no_shell_command instead.</description>
+                            <name>command</name>
+                            <required>false</required>
+                            <secret>false</secret>
+                            <type>Scalar</type>
+                            <value>%job_default_shell%</value>
+                        </variables>
+                        <variables>
+                            <description>OS Script to run on the target.</description>
+                            <name>large_os_script</name>
+                            <required>false</required>
+                            <secret>false</secret>
+                            <type>Scalar</type>
+                            <value> jobParams2
+                            </value>
+                        </variables>
+                    </job>
+                </jobData>
+    </jobList>
+    </Jobsdata>
